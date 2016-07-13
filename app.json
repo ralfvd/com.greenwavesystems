@@ -1,0 +1,83 @@
+{
+    "id": "com.greenwavesystems",
+    "name": {
+        "en": "Greenwave"
+    },
+    "version": "0.0.1",
+    "compatibility": ">=0.9.0",
+    "author": {
+        "name": "Emile Nijssen",
+        "email": "emile@athom.nl"
+    },
+    "drivers": [
+	    {
+		    "id": "powernode",
+		    "name": {
+			    "en": "Greenwave PowerNode"
+		    },
+		    "zwave": {
+			    "manufacturerId": 153,
+			    "productTypeId": 3,
+			    "productId": 4,
+			    "learnmode": {
+				    "image": "/drivers/powernode/assets/learnmode.svg",
+				    "instruction": {
+					    "en": "Press the small button on your Greenwave PowerNode",
+					    "nl": "Druk op de kleine knop op de Greenwave PowerNode"
+				    }
+				},
+			    "associationGroups": [ 1 ],
+			    "multiChannelNodes": {
+				    "1": {
+					    "class": "socket",
+					    "capabilities": [ "onoff" ],
+					    "name": {
+						    "en": "Greenwave PowerNode 1"
+						}
+				    },
+				    "2": {
+					    "class": "socket",
+					    "capabilities": [ "onoff" ],
+					    "name": {
+						    "en": "Greenwave PowerNode 2"
+						}
+				    },
+				    "3": {
+					    "class": "socket",
+					    "capabilities": [ "onoff" ],
+					    "name": {
+						    "en": "Greenwave PowerNode 3"
+						}
+				    },
+				    "4": {
+					    "class": "socket",
+					    "capabilities": [ "onoff" ],
+					    "name": {
+						    "en": "Greenwave PowerNode 4"
+						}
+				    },
+				    "5": {
+					    "class": "socket",
+					    "capabilities": [ "onoff" ],
+					    "name": {
+						    "en": "Greenwave PowerNode 5"
+						}
+				    },
+				    "6": {
+					    "class": "socket",
+					    "capabilities": [ "onoff" ],
+					    "name": {
+						    "en": "Greenwave PowerNode 6"
+						}
+				    }
+			    }
+		    },
+		    "class": "socket",
+		    "capabilities": [ "onoff" ],
+		    "images": {
+			    "large": "/drivers/powernode/assets/images/large.jpg",
+			    "small": "/drivers/powernode/assets/images/small.jpg"
+			}
+		}
+	]
+}
