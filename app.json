@@ -15,6 +15,7 @@
 		    "name": {
 			    "en": "Greenwave PowerNode"
 		    },
+			"icon": "/drivers/powernode/assets/icon.svg",
 		    "zwave": {
 			    "manufacturerId": 153,
 			    "productTypeId": 3,
@@ -30,42 +31,48 @@
 			    "multiChannelNodes": {
 				    "1": {
 					    "class": "socket",
-					    "capabilities": [ "onoff" ],
+					    "capabilities": [ "onoff", "meter_power" ],
+					    "icon": "/drivers/powernode/assets/icon-1.svg",
 					    "name": {
 						    "en": "Greenwave PowerNode 1"
 						}
 				    },
 				    "2": {
 					    "class": "socket",
-					    "capabilities": [ "onoff" ],
+					    "capabilities": [ "onoff", "meter_power" ],
+					    "icon": "/drivers/powernode/assets/icon-2.svg",
 					    "name": {
 						    "en": "Greenwave PowerNode 2"
 						}
 				    },
 				    "3": {
 					    "class": "socket",
-					    "capabilities": [ "onoff" ],
+					    "capabilities": [ "onoff", "meter_power" ],
+					    "icon": "/drivers/powernode/assets/icon-3.svg",
 					    "name": {
 						    "en": "Greenwave PowerNode 3"
 						}
 				    },
 				    "4": {
 					    "class": "socket",
-					    "capabilities": [ "onoff" ],
+					    "capabilities": [ "onoff", "meter_power" ],
+					    "icon": "/drivers/powernode/assets/icon-4.svg",
 					    "name": {
 						    "en": "Greenwave PowerNode 4"
 						}
 				    },
 				    "5": {
 					    "class": "socket",
-					    "capabilities": [ "onoff" ],
+					    "capabilities": [ "onoff", "meter_power" ],
+					    "icon": "/drivers/powernode/assets/icon-5.svg",
 					    "name": {
 						    "en": "Greenwave PowerNode 5"
 						}
 				    },
 				    "6": {
 					    "class": "socket",
-					    "capabilities": [ "onoff" ],
+					    "capabilities": [ "onoff", "meter_power" ],
+					    "icon": "/drivers/powernode/assets/icon-6.svg",
 					    "name": {
 						    "en": "Greenwave PowerNode 6"
 						}
@@ -73,7 +80,7 @@
 			    }
 		    },
 		    "class": "socket",
-		    "capabilities": [ "onoff" ],
+		    "capabilities": [ "onoff", "meter_power" ],
 		    "images": {
 			    "large": "/drivers/powernode/assets/images/large.jpg",
 			    "small": "/drivers/powernode/assets/images/small.jpg"

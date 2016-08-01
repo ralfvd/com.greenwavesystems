@@ -6,6 +6,7 @@ const ZwaveDriver	= require('homey-zwavedriver');
 // http://www.pepper1.net/zwavedb/device/280
 
 module.exports = new ZwaveDriver( path.basename(__dirname), {
+	debug: true,
 	capabilities: {
 		'onoff': {
 			'command_class'				: 'COMMAND_CLASS_SWITCH_BINARY',
@@ -20,6 +21,21 @@ module.exports = new ZwaveDriver( path.basename(__dirname), {
 				return report['Value'] === 'on/enable';
 			},
 			'pollInterval': 5000
+		},
+		'meter_power': {
+			'command_class'				: 'COMMAND_CLASS_METER',
+			'command_get'				: 'METER_GET',
+			'command_get_parser'		: function(){
+				return {
+					'Properties1': {
+						'Scale': 0
+					}
+				}
+			},
+			'command_report'			: 'METER_REPORT',
+			'command_report_parser'		: function( report ) {
+				return report['Meter Value (Parsed)'];
+			}
 		}
 	},
 	settings: {}
