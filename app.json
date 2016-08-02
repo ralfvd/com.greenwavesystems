@@ -84,7 +84,24 @@
 		    "images": {
 			    "large": "/drivers/powernode/assets/images/large.jpg",
 			    "small": "/drivers/powernode/assets/images/small.jpg"
-			}
+			},
+			"settings": [
+				{
+					"id": "poll_interval",
+					"type": "number",
+					"attr": {
+						"min": 60,
+						"max": 3600
+					},
+					"value": 120,
+					"label": {
+						"en": "Poll Interval (s)"
+					},
+					"hint": {
+						"en": "The amount of seconds between asking the device for a status update."
+					}
+				}
+			]
 		}
 	]
 }

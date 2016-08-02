@@ -20,7 +20,7 @@ module.exports = new ZwaveDriver( path.basename(__dirname), {
 			'command_report_parser'		: function( report ){
 				return report['Value'] === 'on/enable';
 			},
-			'pollInterval': 5000
+			'pollInterval': "poll_interval"
 		},
 		'meter_power': {
 			'command_class'				: 'COMMAND_CLASS_METER',
@@ -35,7 +35,8 @@ module.exports = new ZwaveDriver( path.basename(__dirname), {
 			'command_report'			: 'METER_REPORT',
 			'command_report_parser'		: function( report ) {
 				return report['Meter Value (Parsed)'];
-			}
+			},
+			'pollInterval': "poll_interval"
 		}
 	},
 	settings: {}
