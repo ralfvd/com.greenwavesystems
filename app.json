@@ -1,14 +1,22 @@
 {
     "id": "com.greenwavesystems",
     "name": {
-        "en": "Greenwave"
+        "en": "Greenwave Systems"
     },
     "version": "0.0.1",
     "compatibility": ">=0.9.2",
     "author": {
-        "name": "Emile Nijssen",
-        "email": "emile@athom.nl"
+        "name": "Athom B.V.",
+        "email": "info@athom.com"
     },
+    "category": [ "appliances" ],
+    "description": {
+	    "en": "Drivers for Greenwave Systems devices"
+    },
+	"images": {
+		"large": "/assets/images/large.jpg",
+		"small": "/assets/images/small.jpg"
+	},
     "drivers": [
 	    {
 		    "id": "powernode",
@@ -16,6 +24,10 @@
 			    "en": "Greenwave PowerNode"
 		    },
 			"icon": "/drivers/powernode/assets/icon.svg",
+			"images": {
+				"large": "/drivers/powernode/assets/images/large.jpg",
+				"small": "/drivers/powernode/assets/images/small.jpg"
+			},
 		    "zwave": {
 			    "manufacturerId": 153,
 			    "productTypeId": 3,
